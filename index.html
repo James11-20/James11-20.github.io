@@ -3,11 +3,31 @@
 <head>
     <meta charset="utf-8" >
     <title>My First Webpage</title>
+<style>
+    .topright{
+        position: fixed;
+        top: 10px;
+        right: 0;
+
+    }
+    video{
+        background: url(background.mp4);
+        background-position: center;
+    }
+</style>
 </head>
+
 <body>
+<video width="745" height="650" preload="auto" autoplay loop>
+    <source src="https://www.vecteezy.com/video/34552948-windmill-on-sunset-background-clean-natural-energy" type="video/mp4">
+    <source src="C:\Users\CSJam\Videos\background2.MP4" type="video/mp4">
+</video>
     <!-- This is a comment -->
     <h1> James Carroll's Webpage!</h1>
     <p>James is a student at BSU. And this is his first Webpage!</p>
-    <ul></ul>
+    <p class="topright">About Me
+        Resume
+        Hobbies
+        Work</p>
 </body>
 </html>
