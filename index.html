@@ -4,20 +4,57 @@
     <link rel="stylesheet" href="Style.css">
     <meta charset="utf-8" >
     <title>My First Webpage</title>
+    <script src="https://kit.fontawesome.com/927f54ee10.js" crossorigin="anonymous"></script>
+    <style>
+    @media only screen and(max-width:480px){
+        small {display: none;}
+        iframe {max-width: 100%;}
+    }
+    .topright{
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        color: white;
+        font-family: Arial;
+    }
+    .video{
+        width: 10vw;
+        height: 10vh;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        background: url(background.mp4);
+    }
+    .main{
+        position: relative;
+        top: 295px;
+        left: 15%;
+        font-family: Arial;
+        color: white;
+    }
+    </style>
 </head>
-
     <body>
-        <div class="background">
-            <video autoplay loop>
-                <source src="background2.MP4" type="video/mp4">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <div class="video">
+            <video preload="auto" autoplay loop muted>
+                <source src="background.MP4" type="video/mp4">
             </video>
         </div>
         <!-- This is a comment -->
-        <h1> James Carroll's Webpage!</h1>
-        <p>James is a student at BSU. And this is his first Webpage!</p>
-        <p class="topright">About Me
-            Resume
-            Hobbies
-            Work</p>
+        <div class="main">
+            <h1> James Carroll's Webpage!</h1>
+            <p>James is a student at BSU. And this is his first Webpage!</p>
+            <a href="project.html">My current project, in progress</a>
+        </div>
+        <div class="topright">
+            <p><i class="fa-regular fa-hand-point-right"></i> About Me</p>
+            <p><i class="fa-regular fa-folder-open"></i> Resume</p>
+            <p><i class="fa-regular fa-keyboard"></i> Hobbies</p>
+            <p><i class="fa-regular fa-handshake"></i> Work</p>
+        </div>    
     </body>
 </html>
